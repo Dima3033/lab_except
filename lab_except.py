@@ -1,13 +1,13 @@
 try:
-    num = int(input('number - '))
+    num = int(input('Введіть число - '))
     print(f'!{num} =', end= ' ')
-    t=1
+    temp = 1
     for i in range(1, num+1):
         if i == num:
-            print(i, end= '')
+            print(i, end = '')
         else:
-            print(f'{i} *', end='')
-        t=i
-        print(f'= {t}')
+            print(f'{i} * ', end ='')
+        temp*=i
+        print(f'= {temp}')
 except Exception as ex:
     print(f'Erorr information:')
